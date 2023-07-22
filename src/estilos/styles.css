@@ -1,0 +1,63 @@
+.login-container {
+    background-image: url('../Imagenes/sesion.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos para el contenedor principal del formulario */
+
+.login-container {
+    background-color: #f0f0f0;
+    height: 100vh;
+}
+
+
+/* Estilos para el formulario de inicio de sesión */
+
+.form-container {
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* Estilos para el formulario de inicio de sesión en pantallas más pequeñas */
+
+@media (max-width: 767px) {
+    .form-container {
+        padding: 20px;
+    }
+    .bg-dark {
+        height: 50vh;
+    }
+    .bg-white {
+        height: 50vh;
+    }
+    .bg-white h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .bg-white img {
+        max-width: 80%;
+        max-height: 200px;
+        margin-top: 10px;
+    }
+    .form-control {
+        height: 40px;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
