@@ -25,7 +25,7 @@ const LoginForm = () => {
       setShowModal(true);
     } else {
       try { 
-        const response = await fetch('http://localhost:8080/login', {
+        const response = await fetch('http://3.85.150.8/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

@@ -19,11 +19,13 @@ const Menu = () => {
   const [accountData, setAccountData] = useState(null);
   const { accountId } = useParams();
 
+
+ 
   useEffect(() => {
     // Llamada a la API para obtener los datos de la cuenta
     const fetchAccountData = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/account/${accountId}`);
+        const response = await fetch(`http://3.85.150.8/account/${accountId}`);
         const data = await response.json();
         if (response.ok) {
           setAccountData(data.accountData);
